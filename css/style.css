@@ -1,0 +1,24 @@
+.logo {    
+    display: inline-block;    
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+}
+
+.header-logo {
+    width: 220px;
+    height: 47px;
+}
+
+.header-logo img {
+    padding: 13px 54px 11px 55px;
+}
+
+.footer-logo {
+    width: 220px;
+    height: 68px;
+}
+
+.footer-logo img {
+    padding: 20px 41px 20px 41px;
+}
+
