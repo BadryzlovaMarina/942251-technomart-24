@@ -13,8 +13,11 @@
                <a class="header-logo logo">
                     <img src="img/svg/icon-logo.svg" width="111" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                <form action="" method="post" class="search-form" name="search">
-                    <input type="search" placeholder="Поиск:">
+                <form action="" method="post" class="search-form">
+                    <label class="visually-hidden">
+                       Поиск:  
+                      <input type="search" name="search" placeholder="Поиск:">
+                    </label>
                 </form>
                 <a href="#" class="bookmarks-link">Закладки: 0</a>
                 <a href="#" class="basket-link">Корзина: 0</a>
@@ -95,6 +98,8 @@
                       </div>
                       <p class="old-price">32500 Р.</p> 
                       <p class="new-price">25500 Р.</p>
+                      <button type="button">Купить</button>
+                      <button type="button">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3 class="catalog-item-title">
@@ -105,6 +110,8 @@
                       </div>
                       <p class="old-price">22500 Р.</p> 
                       <p class="new-price">15500 Р.</p>
+                      <button type="button">Купить</button>
+                      <button type="button">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3 class="catalog-item-title">
@@ -115,6 +122,8 @@
                       </div>
                       <p class="old-price">30500 Р.</p> 
                       <p class="new-price">25500 Р.</p>
+                      <button type="button">Купить</button>
+                      <button type="button">В закладки</button>
                   </li>
                   <li class="catalog-item">
                       <h3 class="catalog-item-title">
@@ -124,6 +133,8 @@
                           <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                       </div> 
                       <p class="new-price">12500 Р.</p>
+                      <button type="button">Купить</button>
+                      <button type="button">В закладки</button>
                   </li>
               </ul>
           </section>
@@ -131,14 +142,14 @@
               <h2>Популярные производители:</h2>
               <a href="#" class="button">Все производители</a>
               <ul>
-                  <li><img src="img/brand-bosch.jpg" alt="Bosch" width="126" height="37"></li>
-                  <li><img src="img/brand-makita.jpg" alt="Makita" width="123" height="40"></li>
-                  <li><img src="img/brand-dewalt.jpg" alt="Dewalt" width="146" height="44"></li>
-                  <li><img src="img/brand-interskol.jpg" alt="Интерскол" width="200" height="88"></li>
-                  <li><img src="img/brand-hitachi.jpg" alt="Hitachi" width="169" height="31"></li>
-                  <li><img src="img/brand-lg.jpg" alt="LG" width="121" height="73"></li>
-                  <li><img src="img/brand-aeg.jpg" alt="AEG" width="151" height="96"></li>
-                  <li><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></li>
+                  <li><a href=""><img src="img/brand-bosch.jpg" alt="Bosch" width="126" height="37"></a></li>
+                  <li><a href=""><img src="img/brand-makita.jpg" alt="Makita" width="123" height="40"></a></li>
+                  <li><a href=""><img src="img/brand-dewalt.jpg" alt="Dewalt" width="146" height="44"></a></li>
+                  <li><a href=""><img src="img/brand-interskol.jpg" alt="Интерскол" width="200" height="88"></a></li>
+                  <li><a href=""><img src="img/brand-hitachi.jpg" alt="Hitachi" width="169" height="31"></a></li>
+                  <li><a href=""><img src="img/brand-lg.jpg" alt="LG" width="121" height="73"></a></li>
+                  <li><a href=""><img src="img/brand-aeg.jpg" alt="AEG" width="151" height="96"></a></li>
+                  <li><a href=""><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></a></li>
               </ul>              
           </section>
           <section class="main-services">
@@ -171,7 +182,7 @@
                       <img src="img/map.jpg" width="300" height="158" alt="Офис на карте">
                   </a>
                 </figure>
-                <a class="button" href="#">Заблудились? Напишите нам!</a>
+                <button type="button">Заблудились? Напишите нам!</button>
             </section>
     </main>
     <footer>
@@ -211,9 +222,9 @@
                     © 2010–2019 Компания «Техномарт» Все права защищены
                 </p>
                     <ul>
-                        <li><a class="social-button" href="#">Vkontakte</a></li>
-                        <li><a class="social-button" href="#">Facebook</a></li>
-                        <li><a class="social-button" href="#">Instagram</a></li>
+                        <li><a class="social-button" href="#"><span class="visually-hidden">Vkontakte</span></a></li>
+                        <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+                        <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
                     </ul>
                 <p> 
                    Обратная связь: 
@@ -250,7 +261,7 @@
           </button>
       </form>        
       <button class="modal-close" type="button">
-          Закрыть
+          <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
     
@@ -259,7 +270,9 @@
       <p>
           <img src="img/map-popup.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
-      <button class="modal-close">Закрыть</button>
+      <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 </body>
 </html>
