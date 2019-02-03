@@ -13,7 +13,9 @@
                <a class="header-logo logo">
                     <img src="img/svg/icon-logo.svg" width="111" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                <span class="search-form">Поиск:</span>
+                <form action="" method="post" class="search-form" name="search">
+                    <input type="search" placeholder="Поиск:">
+                </form>
                 <a href="#" class="bookmarks-link">Закладки: 0</a>
                 <a href="#" class="basket-link">Корзина: 0</a>
                 <a href="#" class="order-link">Оформить заказ</a>
@@ -227,6 +229,37 @@
             </div> 
         </div>
     </footer>
-</body>
 
+    <section class="modal modal-contact">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form method="post" action="" class="contact-form">
+          <p>
+              <label for="user-login">Ваше имя:</label>
+              <input type="text" class="" id="user-login" name="login" placeholder="Имя Фамилия">
+          </p>
+          <p>
+              <label for="user-mail">Ваш e-mail:</label>
+              <input type="text" class="" id="user-mail" name="mail" placeholder="email@example.com">
+          </p>
+          <p>
+              <label for="user-message">Текст письма:</label>
+              <textarea id="user-message" class="" name="message" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button" type="submit">
+              Отправить
+          </button>
+      </form>        
+      <button class="modal-close" type="button">
+          Закрыть
+      </button>
+    </section>
+    
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+          <img src="img/map-popup.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close">Закрыть</button>
+    </section>
+</body>
 </html>

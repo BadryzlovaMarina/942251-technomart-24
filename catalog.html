@@ -13,7 +13,9 @@
                <a class="header-logo logo" href="index.html">
                     <img src="img/svg/icon-logo.svg" width="111" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                <span class="search-form">Поиск:</span>
+                <form action="" method="post" class="search-form" name="search">
+                    <input type="search" placeholder="Поиск:">
+                </form>
                 <a href="#" class="bookmarks-link">Закладки: 0</a>
                 <a href="#" class="basket-link">Корзина: 10</a>
                 <a href="#" class="order-link">Оформить заказ</a>
@@ -62,11 +64,57 @@
         
         <h1 class="page-title">Перфораторы</h1>
         
-        <section class="filter-options">
+        <section class="filters">
             <h2>Фильтр:</h2>
-            <!-- Здесь будет форма -->
-            
+            <form action="" method="get" class="filter">
+               <fieldset>
+                   <legend>Цена:</legend>
+                   <input type="range" id="price" name="filter-price" min="0" max="35000" value="30000" step="1000">
+                   <span>0</span> -
+                   <span>30000</span>
+               </fieldset>
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="checkbox" class="" name="bosch" id="filter-bosch" checked>
+                            <label for="filter-bosch">Bosch</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="" name="interskol" id="filter-interskol">
+                            <label for="filter-interskol">Интерскол</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="" name="makita" id="filter-makita" checked>
+                            <label for="filter-makita">Makita</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">Dewalt</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="checkbox" class="" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="radio" class="" name="power-group" value="battery" id="filter-battery" checked>
+                            <label for="filter-battery">Аккумуляторные</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="radio" class="" name="power-group" value="mains" id="filter-mains">
+                            <label for="filter-mains">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+            </form>            
         </section>
+        
         <div class="sorting-options">
             <h2>Сортировка:</h2>
             <ul>
