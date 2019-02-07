@@ -1,3 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+/*    font-family: "Cuprum", Arial, sans-serif;*/
+    font-family: "PT Sans", Aril, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.red-button {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    background-color: #ee3643;
+}
+
+.main-header {
+    font-family: "Cuprum", Arial, sans-serif;
+    
+    background-color: #f3f7f9;
+}
+
+.main-header li {
+    list-style: none;
+}
+
+.pre-header {
+    color: #ffffff;
+    
+    background-color: #293449; 
+}
+
 .logo {    
     display: inline-block;    
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -13,6 +62,229 @@
     padding: 13px 54px 11px 55px;
 }
 
+.search-form input {    
+    background-color: transparent;
+    border: none;
+}
+
+.pre-header a {
+    color: #ffffff;
+}
+
+
+.header-primary h1 {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+    text-align: left;
+}
+
+.telephone {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+    
+    width: 270px;
+    border: 3px solid #ffffff;
+}
+
+.user-navigation li {
+    list-style: none;
+}
+ 
+.user-navigation a {
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+.site-navigation {
+     background-color: #32425c;
+}
+
+.site-navigation a {
+    color: #ffffff;
+}
+
+/*section "Спецпредложения"*/
+
+.main-benefits h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.button-benefits {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;  
+    
+    background-color: rgba(0,0,0, 0.1);
+}
+
+.main-benefits-stuff {
+    background-color: #ffbf47;
+}
+
+.main-benefits-tool {
+    background-color: #3bbce3;
+}
+
+.main-benefits-technics {
+    background-color: #dc91d8;
+}
+
+.main-benefits-discount {
+    background-color: #8ed78f;
+}
+
+.main-benefits-delivery {
+    background-color: #ffc047;
+}
+
+.main-benefits-slider {
+    background-color: #847365;
+}
+
+.main-benefits-slider h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-benefits-slider b {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/*section "Популярные товары"*/
+
+.popular-goods .top-block {
+    background-color: #f9f5f0;
+}
+
+.popular-goods h2 {
+    color: #32425c;
+}
+
+.catalog-list {
+    font-family: "PT Sans", Aril, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    
+    list-style: none;
+}
+
+.catalog-item {
+    border: 1px solid #eaeaea;
+}
+
+.catalog-item h3 {
+    font-size: 18px;
+    line-height: 20px;    
+    color: #000000;
+}
+
+.catalog-item .old-price {
+    font-size: 17px;
+    line-height: 18px;    
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+.catalog-item .new-price {
+    font-size: 17px;
+    line-height: 18px;    
+    color: #ffffff;
+    
+    background-image: url("../img/svg/red-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/*section "Популярные производители"*/
+
+.popular-manufacturer .top-block {
+    background-color: #f9f5f0;
+}
+
+.popular-manufacturer h2 {
+    color: #32425c;
+}
+
+.popular-manufacturer ul {
+    list-style: none;
+}
+
+.popular-manufacturer li {
+    border: 1px solid #eaeaea;
+    text-align: center;
+}
+
+
+/*section "Сервисы"*/
+
+.main-services {
+    background-color: #f4f7f9;    
+}
+
+.main-services h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #32425c;
+}
+
+.main-services ul {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 30x;
+    font-weight: 700;
+    
+    list-style: none;
+}
+
+.main-services a:first-child {
+    color: #32425c;
+    
+    background-color: #ffffff;
+}
+
+.delivery-option {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20x;
+    font-weight: 400;
+    
+    list-style: none;
+} 
+
+.delivery-option li:before {
+    color: #ee3643; /* Цвет маркера */
+    content: "- "; /* Сам маркер */
+    padding-right: 2px; /* Расстояние от маркера до текста */
+   }
+
+/*    ---------     */
+
+.main-footer {
+    font-family: "Cuprum", Arial, sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    
+    background-color: #32425c;
+}
+
 .footer-logo {
     width: 220px;
     height: 68px;
@@ -22,3 +294,57 @@
     padding: 20px 41px 20px 41px;
 }
 
+.pre-footer {    
+    font-size: 18px;
+    line-height: 24px;
+    
+    background-color: #32425c;
+}
+
+.pre-footer ul {
+    list-style: none;
+}
+
+.footer-top-menu a {
+    color: #ffffff;
+}
+
+.footer-down-menu a {
+    color: #ffda96;
+}
+
+.footer-primary {
+    font-size: 16px;
+    line-height: 18px;
+    
+    background-color: #293449;
+}
+
+.footer-primary ul {
+    list-style: none;
+}
+
+.footer-primary-right a{
+    color: #ffd180;
+}
+
+.social-button {
+    color: #ffffff;
+}
+
+/*    Модальное окно     */
+
+.modal-contact {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.modal-contact-down {
+     background-color: #f4f4f4;
+}
+
+.contact-form input,
+.contact-form textarea{
+    border: 2px solid #dee3e4;
+}

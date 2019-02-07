@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Техномарт»</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -58,36 +61,36 @@
              <h2 class="visually-hidden">Спецпредложения</h2>
               <div class="main-benefits-stuff">
                   <h3>Материалы</h3>
-                  <a href="" class="button">На любой вкус</a>
+                  <a href="" class="button button-benefits">На любой вкус</a>
               </div>
               <div class="main-benefits-tool">
                   <h3>Инструмент</h3>
-                  <a href="" class="button">На все случаи</a>
+                  <a href="" class="button button-benefits">На все случаи</a>
               </div>
-              <div class="main-benefits-tech">
+              <div class="main-benefits-technics">
                   <h3>Техника</h3>
-                  <a href="" class="button">Для стройки</a>
+                  <a href="" class="button button-benefits">Для стройки</a>
               </div>
               <div class="main-benefits-slider">
                   <h3>Дрели</h3>
                   <b>Соседям на радость!</b>
-                  <a href="#" class="button">Открыть каталог</a>
+                  <a href="#" class="button red-button">Открыть каталог</a>
                  <!-- Здесь будет слайдер -->
               </div>
               <div class="right-side">
                   <div class="main-benefits-discount">
                       <h3>Скидки 50%</h3>
-                      <a href="" class="button">На 350 товаров</a>
+                      <a href="" class="button button-benefits">На 350 товаров</a>
                   </div>
                   <div class="main-benefits-delivery">
                       <h3>Доставка</h3>
-                      <a href="" class="button">Бесплатно</a>
+                      <a href="" class="button button-benefits">Бесплатно</a>
                   </div>
               </div>              
           </section>
           <section class="popular-goods">
               <h2>Популярные товары:</h2>
-              <a href="#" class="button">Все популярные товары</a>
+              <a href="#" class="button red-button">Все популярные товары</a>
               <ul class="catalog-list">
                   <li class="catalog-item">
                       <h3 class="catalog-item-title">
@@ -140,7 +143,7 @@
           </section>
           <section class="popular-manufacturer">
               <h2>Популярные производители:</h2>
-              <a href="#" class="button">Все производители</a>
+              <a href="#" class="button red-button">Все производители</a>
               <ul>
                   <li><a href=""><img src="img/brand-bosch.jpg" alt="Bosch" width="126" height="37"></a></li>
                   <li><a href=""><img src="img/brand-makita.jpg" alt="Makita" width="123" height="40"></a></li>
@@ -172,7 +175,7 @@
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a class="button" href="#">Подробнее о компании</a>
+                <a class="button red-button" href="#">Подробнее о компании</a>
             </section>
             <section class="main-contacts">
                <h2>Контакты</h2>
@@ -182,10 +185,10 @@
                       <img src="img/map.jpg" width="300" height="158" alt="Офис на карте">
                   </a>
                 </figure>
-                <button type="button">Заблудились? Напишите нам!</button>
+                <button type="button" class="red-button">Заблудились? Напишите нам!</button>
             </section>
     </main>
-    <footer>
+    <footer class="main-footer">
        <div class="pre-footer">
            <div class="container">
  <!--                Разбить на 2 списка      -->           
@@ -193,7 +196,7 @@
                     <a class="footer-logo logo">
                       <img src="img/svg/icon-logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
                     </a>
-                    <ul>
+                    <ul class="footer-top-menu">
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Новости</a></li>
                         <li><a href="#">Каталог</a></li>
@@ -207,7 +210,7 @@
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                         <p>+7 (812) 555-05-55</p>
                     </div> 
-                    <ul>
+                    <ul class="footer-down-menu">
                         <li><a href="#">Материалы</a></li>
                         <li><a href="#">Техника</a></li>
                         <li><a href="#">Инструмент</a></li>
@@ -226,17 +229,19 @@
                         <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
                         <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
                     </ul>
-                <p> 
-                   Обратная связь: 
-                   <a href="#">
-                       mail@htmlacademy.ru
-                    </a>               
-                </p>
-                <p>  Разработано — 
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">
-                       htmlacademy.ru
-                    </a>
-                </p>
+                <div class="footer-primary-right">     
+                    <p> 
+                       Обратная связь: 
+                       <a href="#">
+                           mail@htmlacademy.ru
+                        </a>               
+                    </p>
+                    <p>  Разработано — 
+                        <a href="https://htmlacademy.ru/intensive/htmlcss">
+                           htmlacademy.ru
+                        </a>
+                    </p>
+                </div>
             </div> 
         </div>
     </footer>
@@ -256,11 +261,11 @@
               <label for="user-message">Текст письма:</label>
               <textarea id="user-message" class="" name="message" rows="5" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="button" type="submit">
+          <button class="button red-button" type="submit">
               Отправить
           </button>
       </form>        
-      <button class="modal-close" type="button">
+      <button class="modal-close red-button" type="button">
           <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
@@ -271,7 +276,7 @@
           <img src="img/map-popup.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <button class="modal-close" type="button">
-            <span class="visually-hidden">Закрыть</span>
+            <span class="visually-hidden red-button">Закрыть</span>
       </button>
     </section>
 </body>
