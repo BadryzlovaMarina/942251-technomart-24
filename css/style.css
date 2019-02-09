@@ -1,27 +1,35 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     
-/*    font-family: "Cuprum", Arial, sans-serif;*/
+    /*font-family: "Cuprum", Arial, sans-serif;*/
     font-family: "PT Sans", Aril, sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
+    color: #000000;
+    
+    background-color: #ffffff;
 }
 
 a {
     text-decoration: none;
 }
 
-h2 {
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
 .red-button {
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -37,14 +45,25 @@ h2 {
     background-color: #f3f7f9;
 }
 
-.main-header li {
-    list-style: none;
-}
+
+/*    ----    pre-header     ----    */
+
 
 .pre-header {
+    font-size: 17px;
+    line-height: 18px;
     color: #ffffff;
     
     background-color: #293449; 
+}
+
+.header-logo {
+    width: 220px;
+    height: 47px;
+}
+
+.header-logo {
+    padding: 13px 54px 11px 55px;
 }
 
 .logo {    
@@ -53,34 +72,80 @@ h2 {
     background-color: #ee3643;
 }
 
-.header-logo {
-    width: 220px;
-    height: 47px;
+.header-logo:hover {
+    background-color: #ca2c37;
 }
 
-.header-logo img {
-    padding: 13px 54px 11px 55px;
+.header-logo:focus {
+    background-color: #ba2732;
 }
 
-.search-form input {    
+.search-form {    
     background-color: transparent;
     border: none;
 }
 
-.pre-header a {
+.search-form::-webkit-input-placeholder {
     color: #ffffff;
 }
 
+.search-form:hover,
+.bookmarks-link:hover,
+.basket-link:hover {   
+    background-color: #212a3a;
+}
 
-.header-primary h1 {
+.search-form:focus {
+    background-color: #ffffff;
+}
+
+.search-form:focus::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.order-navigation a {
+    color: #ffffff;
+}
+
+.bookmarks-link:focus,
+.basket-link:focus {
+    color: rgba(255, 255, 255, 0.6);    
+    background-color: #161d29;
+}
+
+.order-link {
+    background-color: #63a63e;
+}
+
+.order-link:hover {
+    background-color: #5fbb2d;
+}
+
+.order-link:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
+}
+
+/*  ----  catalog  ----  */
+
+.page-basket {
+    background-color: #ee3643;
+}
+
+/*    ----    header-primary     ----    */
+
+
+.header-primary h1,
+.page-headlines {
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
     color: #ee3643;
     text-align: left;
+    font-weight: 400;
 }
 
-.telephone {
+.header-telephone {
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
@@ -89,41 +154,136 @@ h2 {
     border: 3px solid #ffffff;
 }
 
-.user-navigation li {
+.header-address {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.user-navigation {
     list-style: none;
 }
- 
-.user-navigation a {
+
+.login-link a,
+.register-link a {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;        
+    
+    background-color: #ffffff;  
+}
+
+.login-link a:hover,
+.register-link a:hover {
+    color: #ee3643;
+}
+
+.login-link a:focus,
+.register-link a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*  ----  catalog  ----  */
+
+.user-name {
+    font-size: 21px;
+    line-height: 21px;
     color: #000000;
     
     background-color: #ffffff;
 }
 
+.user-name:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-orders a,
+.user-profile a {
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.user-orders a:hover,
+.user-profile a:hover {
+    color: #ee3643;
+}
+
+.user-orders a:focus,
+.user-profile a:focus {
+    color: rgba(50, 66, 92, 0.3);
+}
+
+
+/*    ----    main-navigation     ----    */
+
+
+.main-navigation {
+    font-size: 17px;
+    line-height: 17px;
+    
+    background-color: #32425c;
+    box-shadow: inset 0px -5px 0 0 #293449;
+}
+
 .site-navigation {
-     background-color: #32425c;
+    list-style: none;
 }
 
 .site-navigation a {
     color: #ffffff;
 }
 
-/*section "Спецпредложения"*/
+.site-navigation a:hover {
+    background-color: #293449;
+}
+
+.site-navigation a:focus {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #1d2739;
+}
+
+/*  ----  catalog  ----  */
+
+.breadcrumbs {
+    font-size: 13px;
+    line-height: 18px;
+    
+    list-style: none; 
+}
+
+.breadcrumbs a {
+    color: #000000;
+}
+
+.top-block {
+    background-color: #f2f6f8;
+}
+
+.page-title {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30x;
+    color: #32425c;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*    ----    section "Спецпредложения"     ----    */
+
+
+.main-benefits {
+    font-family: "Cuprum", Arial, sans-serif;
+    color: #ffffff;
+}
+
+.main-benefits h2 {
+    color: #32425c;
+}
 
 .main-benefits h3 {
     font-size: 24px;
     line-height: 30px;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.button-benefits {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    text-transform: uppercase;  
-    
-    background-color: rgba(0,0,0, 0.1);
+    font-weight: 700;    
 }
 
 .main-benefits-stuff {
@@ -146,6 +306,28 @@ h2 {
     background-color: #ffc047;
 }
 
+.button-benefits {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;  
+    
+    background-color: rgba(0,0,0, 0.1);
+}
+
+.button-benefits:hover {
+    background-color: rgba(0,0,0, 0.2);
+}
+
+.button-benefits:focus {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+
+/*    ----    slider     ----    */
+
+
 .main-benefits-slider {
     background-color: #847365;
 }
@@ -161,21 +343,118 @@ h2 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    color: #ffffff;
 }
 
-/*section "Популярные товары"*/
-
-.popular-goods .top-block {
-    background-color: #f9f5f0;
+.slider-button:hover {
+    background-color: #ca2c37;
 }
 
-.popular-goods h2 {
+.slider-button:focus {
+    background-color: #ba2732;
+}
+
+/*  ----  catalog  ----  */
+
+.filters {
+    width: 220px;
+}
+
+.filters-top {
+    background-color: #f7f3ec;
+}
+
+.filters-top h2 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.filter legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter-price-area {
+    background-color: #f7f3ec;
+}
+
+.filter-price,
+.filter-brand,
+.filter-power {
+    border: none;    
+}
+.filter-price,
+.filter-brand {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-button {
+    font-size: 13px;
+    line-height: 18px;
+    
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+}
+
+.sorting-options {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    
+    background-color: #f7f3ec;
+}
+
+.sorting-options h2 {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.sorting-options ul {
+    list-style: none;
+}
+
+.sorting-options a {
+    color: rgba(0, 0, 0, 0.18);
+    text-decoration: underline dotted #ee3643;
+}
+
+.sorting-options a:hover {
+    color: #000000;
+    text-decoration: underline #ee3643 ;
+}
+
+.sorting-options a:focus {
+    color: #ee3643;
+    text-decoration: none;
+}
+
+/*    ----    section "Популярные товары"     ----    */
+
+
+.popular-item h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
     color: #32425c;
 }
 
+.popular-item-top {
+    background-color: #f9f5f0;
+}
+
 .catalog-list {
-    font-family: "PT Sans", Aril, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -183,58 +462,125 @@ h2 {
     list-style: none;
 }
 
-.catalog-item {
-    border: 1px solid #eaeaea;
-}
-
-.catalog-item h3 {
+.catalog-item-title {
     font-size: 18px;
     line-height: 20px;    
     color: #000000;
 }
 
-.catalog-item .old-price {
-    font-size: 17px;
-    line-height: 18px;    
+.item-old-price {        
     color: #a9a9a9;
     text-decoration: line-through;
 }
 
-.catalog-item .new-price {
-    font-size: 17px;
-    line-height: 18px;    
+.item-new-price {    
     color: #ffffff;
     
     background-image: url("../img/svg/red-button.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;    
+}
+
+.catalog-item {
+    border: 1px solid #e5e5e5;
+    width: 220px
+}
+
+.catalog-item:hover {
+    border: none;
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.buy-button {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
     
+    background-color: #63a63e;
+    border: none;
+    box-shadow: inset 0px -3px 0 0 #367315;
 }
 
-/*section "Популярные производители"*/
-
-.popular-manufacturer .top-block {
-    background-color: #f9f5f0;
+.buy-button:hover {
+    background-color: #5fbb2d;
 }
 
-.popular-manufacturer h2 {
+.buy-button:focus {
+    background-color: #518534;
+    box-shadow: none;
+}
+
+.marker-button {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #32425c;
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
+}
+
+.marker-button:hover {
+    border: 3px solid #32425c;
+}
+
+.marker-button:focus {
+    color: rgba(50, 66, 92, 0.3);
+    border: 3px solid rgba(50, 66, 92, 0.3);
+}
+
+
+/*    ----    section "Популярные производители"     ----    */
+
+
+.popular-brand h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
     color: #32425c;
 }
 
-.popular-manufacturer ul {
+.popular-brand-top {
+    background-color: #f9f5f0;
+}
+
+.brand-list {
     list-style: none;
 }
 
-.popular-manufacturer li {
-    border: 1px solid #eaeaea;
+.brand-list a {
+    display: inline-block;
+    width: 220px;
+    border: 1px solid #e5e5e5;
     text-align: center;
 }
 
+.brand-list a:hover {
+    border: none;
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
 
-/*section "Сервисы"*/
+.brand-list a:focus {
+    border: none;
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+
+/*    ----    section main-services     ----    */
+
 
 .main-services {
     background-color: #f4f7f9;    
+}
+
+.main-services h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .main-services h3 {
@@ -245,19 +591,47 @@ h2 {
     color: #32425c;
 }
 
-.main-services ul {
-    font-family: "Cuprum", Arial, sans-serif;
+.services-navigation {
+    font-family: "Cuprum", Arial, sans-serif;    
     font-size: 21px;
     line-height: 30x;
-    font-weight: 700;
+    font-weight: 700;        
     
-    list-style: none;
+    list-style: none;    
 }
 
-.main-services a:first-child {
+.services-navigation a {     
+    color: #ffffff;   
+    
+    background-color: #32425c;    
+    box-shadow: 0px -1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    
+    display: inline-block;
+    width: 240px;
+}
+
+.services-navigation a:hover {    
+    background-color: #293449;
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.services-navigation a:focus {
     color: #32425c;
     
     background-color: #ffffff;
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+
+/*    ----    section extra-benefits     ----    */
+
+
+.extra-benefits h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30x;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .delivery-option {
@@ -270,19 +644,74 @@ h2 {
 } 
 
 .delivery-option li:before {
-    color: #ee3643; /* Цвет маркера */
-    content: "- "; /* Сам маркер */
-    padding-right: 2px; /* Расстояние от маркера до текста */
+    background-color: #ee3643;
+    content: ""; 
+    display: block;
+    width: 25px;
    }
 
-/*    ---------     */
+
+/*    ----    main-contacts     ----    */
+
+
+.main-contacts h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30x;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contact-button {
+    border: none;
+}
+
+/*  ----  catalog  ----  */
+
+.paginator a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    
+    border: 1px solid #e5e5e5;
+}
+
+.paginator a:first-child {
+    background-color: #ee3643;
+}
+
+.description-item {
+    background-color: #f4f7f9;
+}
+
+.description-item h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.description-item p {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+/*    ----    footer     ----    */
+
 
 .main-footer {
     font-family: "Cuprum", Arial, sans-serif;
     color: #ffffff;
-    font-weight: 400;
     
     background-color: #32425c;
+}
+
+/*    ----    pre-footer     ----    */
+
+.pre-footer {
+    font-size: 18px;
+    line-height: 24x;
 }
 
 .footer-logo {
@@ -290,28 +719,40 @@ h2 {
     height: 68px;
 }
 
-.footer-logo img {
+.footer-logo {
     padding: 20px 41px 20px 41px;
 }
 
-.pre-footer {    
-    font-size: 18px;
-    line-height: 24px;
-    
-    background-color: #32425c;
-}
-
-.pre-footer ul {
+.footer-top-menu,
+.footer-down-menu {
     list-style: none;
 }
 
 .footer-top-menu a {
-    color: #ffffff;
+    color: #f1f5f7;
+}
+
+.footer-top-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-top-menu a:focus {
+    color: rgba(241, 245, 247, 0.5);
 }
 
 .footer-down-menu a {
-    color: #ffda96;
+    color: #ffd180;
 }
+
+.footer-down-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-down-menu a:focus {
+    color: rgba(255, 209, 128, 0.5);
+}
+
+/*    ----    footer-primary     ----    */
 
 .footer-primary {
     font-size: 16px;
@@ -324,20 +765,33 @@ h2 {
     list-style: none;
 }
 
-.footer-primary-right a{
-    color: #ffd180;
-}
-
 .social-button {
     color: #ffffff;
 }
 
-/*    Модальное окно     */
+.footer-primary-right a{
+    color: #ffd180;
+}
+
+.footer-primary-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-primary-right a:focus {
+    color: #ee3643;
+}
+
+
+/*    ----    Модальное окно     ----    */
+
 
 .modal-contact {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 18px;
+    
+    width: 620px;
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-contact-down {
@@ -347,4 +801,14 @@ h2 {
 .contact-form input,
 .contact-form textarea{
     border: 2px solid #dee3e4;
+}
+
+.send-button {
+    border: none;
+    width: 460px;
+} 
+
+.container {
+    width: 940px;
+    margin: 0 auto;
 }
