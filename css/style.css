@@ -81,6 +81,9 @@ a {
 }
 
 .search-form {    
+    font-size: 17px;
+    line-height: 18px;
+    
     background-color: transparent;
     border: none;
 }
@@ -689,6 +692,7 @@ a {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .description-item p {
@@ -808,7 +812,197 @@ a {
     width: 460px;
 } 
 
+/* ----- Сеточные стили ----- */
+
 .container {
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
+    padding: 0 10px;
+}
+
+.pre-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-primary {
+    padding-bottom: 60px;
+}
+
+.header-primary-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header-primary h1,
+.page-headlines {
+    width: 196px;
+}
+
+.user-navigation {
+    width: 281px;
+}
+
+.user-navigation li {
+    display: inline-block;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.main-benefits {
+    padding-top: 59px;
+}
+
+.main-benefits-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.benefits {
+    width: 300px;
+}
+
+.main-benefits-slider {
+    width: 620px;
+    margin-right: 20px;
+}
+
+.main-benefits-stuff {
+    margin-right: 20px;
+}
+
+.main-benefits-tool {
+    margin-right: 20px;
+}
+
+.catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.catalog-item {
+    width: 220px;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.brand-list li {
+    width: 220px;
+}
+
+.main-services {
+    margin-bottom: 82px;
+}
+
+.main-services-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-brand {
+    margin-bottom: 85px;
+}
+
+.main-down-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 86px;
+}
+
+.main-down-wrapper h2 {
+    margin: 0;
+}
+
+/* ----- Catalog ----- */
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.main-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.filters,
+.filter-price-area input {
+    width: 220px;
+}
+
+.filters fieldset,
+.filters ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main-page-right {
+    width: 700px;
+}
+
+.sorting-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sorting-options li {
+   display: inline-block; 
+}
+
+.description-item  h2 {
+    margin: 0;
+}
+
+.description-item {
+    padding-top: 67px;
+    padding-bottom: 73px;
+}
+
+
+.footer-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-menu li {
+    padding-right: 60px;
+}
+
+.footer-down-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-down-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-down-menu li {
+    padding-right: 60px;
+}
+
+.footer-primary .container {
+    display: flex;
+    justify-content: space-between;
 }
