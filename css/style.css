@@ -258,7 +258,7 @@ a {
     color: #000000;
 }
 
-.top-block {
+.main-page-top {
     background-color: #f2f6f8;
 }
 
@@ -820,20 +820,24 @@ a {
     padding: 0 10px;
 }
 
+.main-header {
+    padding-bottom: 60px;
+}
+
 .pre-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header-primary {
-    padding-bottom: 60px;
+    
+    height: 42px;
 }
 
 .header-primary-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    
+    height: 158px;
 }
 
 .header-primary h1,
@@ -842,7 +846,7 @@ a {
 }
 
 .user-navigation {
-    width: 281px;
+    width: 281px;    
 }
 
 .user-navigation li {
@@ -853,26 +857,36 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 55px;
+    padding-left: 52px;
     margin: 0;
+    
+    height: 60px;
 }
 
 .main-benefits {
-    padding-top: 59px;
-}
-
-.main-benefits-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    padding-top: 59px;
+    padding-bottom: 53px;
+}
+
+.main-benefits h3 {
+    margin: 0;
 }
 
 .benefits {
     width: 300px;
+    height: 123px;
 }
 
 .main-benefits-slider {
     width: 620px;
-    margin-right: 20px;
+    margin-top: 20px;
+    margin-right: 20px;   
+    
+    height: 266px
 }
 
 .main-benefits-stuff {
@@ -883,15 +897,56 @@ a {
     margin-right: 20px;
 }
 
+.main-benefits-discount {
+    margin-top: 20px;
+}
+
+.main-benefits-delivery {
+    margin-top: 20px;
+}
+
+.popular-item {
+    padding-bottom: 21px;
+}
+
+.popular-item-top h2 {
+    margin: 0;
+}
+
+.popular-item-top {
+    width: 940px;    
+    margin-bottom: 20px;
+        
+    height: 89px;    
+}
+
 .catalog-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
 }
 
 .catalog-item {
     width: 220px;
+    
+    height: 318px;
+}
+
+.popular-brand {
+    padding-bottom: 65px;
+}
+
+.popular-brand-top h2 {
+    margin: 0;
+}
+
+.popular-brand-top {
+    width: 940px;    
+    margin-bottom: 20px;
+    
+    height: 89px;
 }
 
 .brand-list {
@@ -899,14 +954,33 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
 }
 
-.brand-list li {
-    width: 220px;
+.brand-list a {
+    margin-bottom: 20px; 
+    
+    height: 145px;
 }
 
 .main-services {
-    margin-bottom: 82px;
+    padding-top: 68px;
+    padding-bottom: 99px;
+    
+    height: 522px;
+}
+
+.main-services h2 {
+    margin: 0;
+}
+
+.main-services-top {
+    width: 398px;  
+    margin-bottom: 74px
+}
+
+.main-services-top p {
+    margin: 0;
 }
 
 .main-services-wrapper {
@@ -914,14 +988,19 @@ a {
     justify-content: space-between;
 }
 
-.popular-brand {
-    margin-bottom: 85px;
+.services-navigation {
+    margin: 0;
+    padding: 0;
+    margin-right: 80px
 }
 
 .main-down-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 86px;
+    padding-top: 82px;
+    padding-bottom: 86px;
+    
+    height: 536px;
 }
 
 .main-down-wrapper h2 {
@@ -930,23 +1009,46 @@ a {
 
 /* ----- Catalog ----- */
 
+.breadcrumbs {
+    margin: 0;
+    height: 59px;
+}
+
 .breadcrumbs li {
     display: inline-block;
+}
+
+.main-page-top {
+    height: 89px;
+    margin-bottom: 20px;
+}
+
+.main-page-top h1 {
+    margin: 0;
 }
 
 .main-page-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 60px;
 }
 
-.filters,
+.filters-top h2 {
+    margin: 0;
+}
+
+.filters-top {
+    margin-bottom: 12px;
+    
+    height: 38px;
+}
+
+.filter,
 .filter-price-area input {
     width: 220px;
 }
 
-.filters fieldset,
-.filters ul {
+.filter fieldset,
+.filter ul {
     padding: 0;
     margin: 0;
 }
@@ -958,10 +1060,30 @@ a {
 .sorting-options {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 21px;
+    
+    height: 38px;
+}
+
+.sorting-options h2 {
+    margin: 0;
 }
 
 .sorting-options li {
    display: inline-block; 
+}
+
+.main-page-right .catalog-item {
+    margin-bottom: 20px;
+    
+    height: 318px;
+}
+
+.paginator {
+    margin-top: 32px;
+    margin-bottom: 60px;
+    
+    height: 38px;
 }
 
 .description-item  h2 {
@@ -971,8 +1093,17 @@ a {
 .description-item {
     padding-top: 67px;
     padding-bottom: 73px;
+    
+    height: 261px;
 }
 
+.main-footer {
+    height:  300px;
+}
+
+.footer-primary {
+    height:  107px;
+}
 
 .footer-top-wrapper {
     display: flex;
