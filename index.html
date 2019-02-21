@@ -17,11 +17,14 @@
                     <img src="img/svg/icon-logo.svg" width="110" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
                 
-                <form action="" method="post">
+                <form action="" method="post">                   
                     <label for="search-form" class="visually-hidden">
                        Поиск:
                     </label>  
-                      <input type="search" name="search" placeholder="Поиск:" class="search-form" id="search-form">                    
+                      <input type="search" name="search" placeholder="Поиск:" class="search-form" id="search-form">
+                      <div class="search-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                      </div>                      
                 </form>
                 
                 <div class="order-navigation">
@@ -42,7 +45,7 @@
                         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </div>
 
-                    <ul class="user-navigation">
+                    <ul class="main-user-navigation">
                       <li><a href="#" class="login-link">Войти</a></li>
                       <li><a href="#" class="register-link">Регистрация</a></li>
                     </ul>                 
@@ -67,6 +70,7 @@
               <section class="main-benefits">
                  <h2 class="visually-hidden">Спецпредложения</h2>
                       <div class="benefits main-benefits-stuff">
+                         <div class="flag flag-new">новинка</div>
                           <h3>Материалы</h3>
                           <a href="" class="button-benefits">На любой вкус</a>
                       </div>
@@ -77,7 +81,7 @@
                       <div class="benefits main-benefits-technics">
                           <h3>Техника</h3>
                           <a href="" class="button-benefits">Для стройки</a>
-                      </div>
+                      </div>                      
                       <div class="main-benefits-slider">
                           <h3>Дрели</h3>
                           <b>Соседям на радость!</b>
@@ -102,7 +106,7 @@
                       <a href="#" class="red-button">Все популярные товары</a>
                   </div>
                   
-                  <ul class="catalog-list">
+                  <ul class="main-catalog catalog-list">
                       <li class="catalog-item">
                           <div class="actions">
                                <a href="#" class="buy-button">Купить</a>
@@ -145,7 +149,7 @@
                           <p class="item-old-price">30500 Р.</p> 
                           <p class="item-new-price">25500 Р.</p>
                       </li>
-                      <li class="catalog-item">   
+                     <li class="catalog-item">   
                          <div class="flag flag-new">новинка</div>
                           <div class="actions">
                                <a href="#" class="buy-button">Купить</a>
@@ -159,6 +163,7 @@
                           </h3>
                           <p class="item-old-price"></p> 
                           <p class="item-new-price">12500 Р.</p>
+                       </li>                       
                   </ul>
               </section>
               
@@ -175,7 +180,7 @@
                       <li><a href=""><img src="img/brand-hitachi.jpg" alt="Hitachi" width="169" height="31"></a></li>
                       <li><a href=""><img src="img/brand-lg.jpg" alt="LG" width="121" height="73"></a></li>
                       <li><a href=""><img src="img/brand-aeg.jpg" alt="AEG" width="151" height="96"></a></li>
-                      <li><a href=""><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></a></li>
+                      <li><a href=""><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></a></li>                      
                   </ul>              
               </section>
           </div> 
@@ -194,7 +199,8 @@
                       </ul>
                       <div class="main-services-right">
                           <h3>Доставка</h3>
-                          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+                          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                          <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                       </div>   
                   </div>    
               </div>
@@ -305,37 +311,35 @@
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form method="post" action="" class="contact-form">
-          <p>
-              <label for="user-login">Ваше имя:</label>
-              <input type="text" class="" id="user-login" name="login" placeholder="Имя Фамилия">
-          </p>
-          <p>
-              <label for="user-mail">Ваш e-mail:</label>
-              <input type="text" class="" id="user-mail" name="mail" placeholder="email@example.com">
-          </p>
-          <p>
-              <label for="user-message">Текст письма:</label>
-              <textarea id="user-message" class="" name="message" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
+         <div class="modal-contact-top">
+              <p class="modal-user-login">
+                  <label for="user-login">Ваше имя:</label>
+                  <input type="text" class="" id="user-login" name="login" placeholder="Имя Фамилия">
+              </p>
+              <p class="modal-user-mail">
+                  <label for="user-mail">Ваш e-mail:</label>
+                  <input type="text" class="" id="user-mail" name="mail" placeholder="email@example.com">
+              </p>
+              <p class="modal-user-message">
+                  <label for="user-message">Текст письма:</label>
+                  <textarea id="user-message" class="" name="message" rows="5" placeholder="В свободной форме"></textarea>
+              </p>
+          </div>
           <div class="modal-contact-down">
               <button class="send-button red-button" type="submit">
                   Отправить
               </button>
           </div>
       </form>        
-      <button class="modal-close red-button" type="button">
-          <span class="visually-hidden">Закрыть</span>
-      </button>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
-          <img src="img/map-popup.png" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
-      <button class="modal-close red-button" type="button">
-          <span class="visually-hidden">Закрыть</span>
-      </button>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 

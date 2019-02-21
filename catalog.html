@@ -20,9 +20,12 @@
                 
                 <form action="" method="post">
                     <label class="visually-hidden">
-                       Поиск:  
-                      <input type="search" name="search" placeholder="Поиск:" class="search-form">
+                       Поиск:                        
                     </label>
+                    <input type="search" name="search" placeholder="Поиск:" class="search-form">
+                    <div class="search-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                    </div> 
                 </form>
                 <div class="order-navigation">
                     <a href="#" class="bookmarks-link">Закладки: 0</a>
@@ -34,7 +37,7 @@
           <div class="header-primary">
             <div class="container">
                <div class="header-primary-wrapper">
-                    <p class="page-headlines">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+                    <p class="page-headlines">Интернет-магазин строительных материалов <br> и инструментов для ремонта</p>
 
                     
                     <div class="header-contacts">                    
@@ -43,7 +46,7 @@
                     </div> 
                     <div>   
                       <a href="#" class="user-name">Равшан Джамшутович</a>            
-                      <ul class="user-navigation">                         
+                      <ul class="page-user-navigation">                         
                         <li class="user-orders">
                             <a href="#">Мои заказы</a>
                         </li>
@@ -88,30 +91,30 @@
                            <div class="filter-price-area">
                                <input type="range" id="price" name="" min="0" max="35000" value="30000" step="1000">
                            </div>
-                           <span class="filter-price-area">0</span> -
-                           <span class="filter-price-area">30000</span>
+                           <p class="filter-min-price">0</p>
+                           <p class="filter-max-price">30000</p>
                        </fieldset>
                        <fieldset class="filter-brand">
                             <legend>Производители:</legend>
                             <ul>
                                 <li class="filter-option">
-                                    <input type="checkbox" class="" name="bosch" id="filter-bosch" checked>
+                                    <input type="checkbox" class="visually-hidden ilter-input filter-input-checkbox" name="bosch" id="filter-bosch" checked>
                                     <label for="filter-bosch">Bosch</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input type="checkbox" class="" name="interskol" id="filter-interskol">
+                                    <input type="checkbox" class="visually-hidden ilter-input filter-input-checkbox" name="interskol" id="filter-interskol">
                                     <label for="filter-interskol">Интерскол</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input type="checkbox" class="" name="makita" id="filter-makita" checked>
+                                    <input type="checkbox" class="visually-hidden ilter-input filter-input-checkbox" name="makita" id="filter-makita" checked>
                                     <label for="filter-makita">Makita</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input type="checkbox" class="" name="dewalt" id="filter-dewalt">
+                                    <input type="checkbox" class="visually-hidden ilter-input filter-input-checkbox" name="dewalt" id="filter-dewalt">
                                     <label for="filter-dewalt">Dewalt</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input type="checkbox" class="" name="hitachi" id="filter-hitachi">
+                                    <input type="checkbox" class="visually-hidden ilter-input filter-input-checkbox" name="hitachi" id="filter-hitachi">
                                     <label for="filter-hitachi">Hitachi</label>
                                 </li>
                             </ul>
@@ -120,11 +123,11 @@
                             <legend>Питание:</legend>
                             <ul>
                                 <li class="filter-option">
-                                    <input type="radio" class="" name="power-group" value="battery" id="filter-battery" checked>
+                                    <input type="radio" class="visually-hidden filter-input filter-input-radio" name="power-group" value="battery" id="filter-battery" checked>
                                     <label for="filter-battery">Аккумуляторные</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input type="radio" class="" name="power-group" value="mains" id="filter-mains">
+                                    <input type="radio" class="visually-hidden filter-input filter-input-radio" name="power-group" value="mains" id="filter-mains">
                                     <label for="filter-mains">Сетевые</label>
                                 </li>
                             </ul>
@@ -136,18 +139,22 @@
                 <div class="main-page-right">
                     <div class="sorting-options">
                         <h2>Сортировка:</h2>
-                        <ul>            
-                            <li><a href="">По цене</a></li> 
+                        <ul class="sorting-options-left">            
+                            <li><a href="">По цене</a></li>
                             <li><a href="">По типу</a></li> 
-                            <li><a href="">По функционалу</a></li>           
+                            <li><a href="">По функционалу</a></li>       
                         </ul>
-                        <ul>            
-                            <li><a href=""><span class="visually-hidden">По возрастанию</span></a></li>
-                            <li><a href=""><span class="visually-hidden">По убыванию</span></a></li>              
+                        <ul class="sorting-options-right">            
+                            <li><a href=""><span class="visually-hidden">По возрастанию</span>
+                                <img src="img/svg/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+                            </a></li>
+                            <li><a href=""><span class="visually-hidden">По убыванию</span>
+                            <img src="img/svg/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+                            </a></li>              
                         </ul>
                     </div>
 
-                    <section class="catalog">
+                    <section class="page-catalog catalog">
                     <h2 class="visually-hidden">Список перфораторов</h2>
                         <ul class="catalog-list">
                           <!--  1 товар           -->                                  
@@ -213,6 +220,7 @@
                           </li>
                           <!--  5 товар            -->
                           <li class="catalog-item">
+                             <div class="flag flag-new">новинка</div>
                               <div class="actions">
                                    <a href="#" class="buy-button">Купить</a>
                                    <a href="#" class="marker-button">В закладки</a>
@@ -227,8 +235,7 @@
                                <p class="item-new-price">25500 Р.</p>
                           </li>
                           <!--  6 товар            -->
-                          <li class="catalog-item">  
-                             <div class="flag flag-new">новинка</div>  
+                          <li class="catalog-item">   
                               <div class="actions">
                                    <a href="#" class="buy-button">Купить</a>
                                    <a href="#" class="marker-button">В закладки</a>
@@ -243,7 +250,8 @@
                                <p class="item-new-price">12500 Р</p>
                           </li>
                           <!--  7 товар           -->
-                          <li class="catalog-item">  
+                          <li class="catalog-item">
+                             <div class="flag flag-new">новинка</div>  
                               <div class="actions">
                                    <a href="#" class="buy-button">Купить</a>
                                    <a href="#" class="marker-button">В закладки</a>
@@ -258,8 +266,7 @@
                                <p class="item-new-price">15500 Р.</p>
                           </li>
                           <!--  8 товар            -->
-                          <li class="catalog-item"> 
-                             <div class="flag flag-new">новинка</div>    
+                          <li class="catalog-item">   
                               <div class="actions">
                                    <a href="#" class="buy-button">Купить</a>
                                    <a href="#" class="marker-button">В закладки</a>
