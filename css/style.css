@@ -995,12 +995,12 @@ input[type="radio"].visually-hidden {
     margin-bottom: 16px;
 }
 .filters .filter-brand {
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     margin-bottom: 17px;
 }
 
 .filters .filter-power {
-    margin-bottom: 57px;
+    margin-bottom: 59px;
 }
 
 .filter fieldset:last-of-type {
@@ -1008,16 +1008,12 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
     
     font-size: 17px;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.filter-power legend {
-    letter-spacing: 0.5px;
 }
 
 .range-controls {
@@ -1134,78 +1130,95 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.filter-option {
-    margin-bottom: 20px;
-    padding-left: 35px;  
+.filter-brand .filter-option {
+    margin-bottom: 17px;
+}
+
+.filter-power .filter-option {
+    margin-bottom: 16px;
+}
+
+.filter-power legend {
+    margin-bottom: 10px;
 }
 
 .filter-option label {
-    position: relative;
+    display: flex;
     
-    display: block;
+    align-items: center;
     
     cursor: pointer;
     user-select: none;
 }
 
-.filter-input-checkbox + label::before {
-    content: "";
-    
-    position: absolute;
-    left: -34px;
-    top: -2px;
-
-    width: 23px;
+.checkbox {
+    width: 27px;
     height: 23px;
-
-    background-image: url("../img/svg/checkbox-off.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    margin-right: 8px;
 }
 
-.filter-input-checkbox:checked + label::after {
-    content: "";
-    
-    position: absolute;
-    left: -34px;
-    top: -2px;
-    
-    width: 27px;    
-    height: 23px;
-    
-    background-image: url("../img/svg/checkbox-on.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+.checkbox-on {
+    display: none;
 }
 
-.filter-input-radio + label::before {    
-    content: "";
+.filter-input-checkbox:checked + label .checkbox-on {
+    display: block;
+}
+
+.filter-input-checkbox:checked + label .checkbox-off {
+    display: none;
+}
+
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:disabled + label .checkbox-on,
+.filter-input-checkbox:disabled + label .checkbox-off {
+    fill: #b5b5b5; 
     
-    position: absolute;
-    left: -36px;
-    top: -3px;
-    
+    opacity: 0.4;
+}
+
+.checkbox:hover path {
+   fill: #b5b5b5; 
+}
+
+.filter-input-checkbox:focus ~ .checkbox path {
+    fill: #ee3643; 
+}
+
+.radio {
     width: 25px;
     height: 25px;
-    
-    background-image: url("../img/svg/radio-off.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    margin-right: 10px;
 }
 
-.filter-input-radio:checked + label::after {
-    content: "";
+.radio-on {
+    display: none;
+}
+
+.filter-input-radio:checked + label .radio-on {
+    display: block;
+}
+
+.filter-input-radio:checked + label .radio-off {
+    display: none;
+}
+
+.filter-input-radio:disabled + label,
+.filter-input-radio:disabled + label .radio-on,
+.filter-input-radio:disabled + label .radio-off {
+    fill: #b5b5b5; 
     
-    position: absolute;
-    left: -36px;
-    top: -3px;
-    
-    width: 25px;
-    height: 25px;
-    
-    background-image: url("../img/svg/radio-on.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    opacity: 0.4;
+}
+
+.radio:hover path,
+.radio:hover circle {
+    fill: #b5b5b5;
+}
+
+.filter-input-radio:focus ~ .radio path,
+.filter-input-radio:focus ~ .radio circle {
+    fill: #ee3643;
 }
 
 .filter-button {
@@ -1228,7 +1241,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-options {
     display: flex;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
     padding: 10px 0;    
     
     font-size: 13px;
@@ -1834,7 +1847,6 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery-option {
-    position: relative;
     margin: 0;
     margin-top: 22px;
     
@@ -1847,41 +1859,16 @@ input[type="radio"].visually-hidden {
 } 
 
 .delivery-option li {
+    position: relative;
     margin-bottom: 21px;
 }
 
-.delivery-option li:nth-child(1):before {    
+.delivery-option li:before {    
     content: ""; 
     
     position: absolute;
-    top: 9px;
-    left: 0;
-    
-    width: 25px;
-    height: 2px;
-    
-    background-color: #ee3643;
-   }
-
-.delivery-option li:nth-child(2):before {    
-    content: ""; 
-    
-    position: absolute;
-    top: 49px;
-    left: 0;
-    
-    width: 25px;
-    height: 2px;
-    
-    background-color: #ee3643;
-   }
-
-.delivery-option li:nth-child(3):before {    
-    content: ""; 
-    
-    position: absolute;
-    bottom: 12px;
-    left: 0;
+    top: 8px;
+    left: -40px;
     
     width: 25px;
     height: 2px;
@@ -1932,49 +1919,63 @@ input[type="radio"].visually-hidden {
 
 /*  ----  catalog  ----  */
 
-.paginator {
+.pagination-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    
+    margin: 0;
+    padding: 0;
     
     margin-top: 32px;
-    margin-bottom: 60px;    
+    margin-bottom: 60px; 
+    
+    list-style: none;
 }
 
-.paginator a {
+.pagination-item {
+    margin-right: 10px;
+}
+
+.pagination-item:last-child {
+    margin-right: 0;
+}
+
+.pagination-item a {
     display: block;
     width: 38px;
-    margin-right: 10px;
-    padding: 9px 0 9px 0;
+    padding: 9px 0;
     text-align: center;    
     
     font-size: 13px;
     line-height: 18px;
     color: #000000;
+    text-transform: uppercase;
     
     border: 1px solid #e5e5e5;
     border-radius: 3px;
 }
 
-.paginator a:first-child {
-    color: #ffffff;
-    background-color: #ee3643;
-}
-
-.paginator a:last-child {
+.pagination-item:last-child a {
     width: 140px;
-    margin-right: 0;
-    padding-right: 30px;
-    padding-left: 30px;
-    
-    text-transform: uppercase;
 }
 
-.paginator a:hover {
+.pagination-item a:hover {
     border-color: #bdc6ca;
 }
 
-.paginator a:focus {
+.pagination-item a:focus {
     border-color: #ee3643;
+}
+
+.pagination-item-current a {
+    color: #ffffff;
+    background-color: #ee3643;
+    border: none;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+    border: none;
 }
 
 .description-item {
