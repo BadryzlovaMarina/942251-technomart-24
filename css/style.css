@@ -1177,12 +1177,12 @@ input[type="radio"].visually-hidden {
     opacity: 0.4;
 }
 
-.checkbox:hover path {
+.filter-input-checkbox:hover ~ label .checkbox path {
    fill: #b5b5b5; 
 }
 
-.filter-input-checkbox:focus ~ .checkbox path {
-    fill: #ee3643; 
+.filter-input-checkbox:focus ~ label .checkbox path {
+    fill: #b5b5b5; 
 }
 
 .radio {
@@ -1211,14 +1211,14 @@ input[type="radio"].visually-hidden {
     opacity: 0.4;
 }
 
-.radio:hover path,
-.radio:hover circle {
+.filter-input-radio:hover ~ label .radio path,
+.filter-input-radio:hover ~ label .radio circle {
     fill: #b5b5b5;
 }
 
-.filter-input-radio:focus ~ .radio path,
-.filter-input-radio:focus ~ .radio circle {
-    fill: #ee3643;
+.filter-input-radio:focus ~ label .radio path,
+.filter-input-radio:focus ~ label .radio circle {
+    fill: #b5b5b5;
 }
 
 .filter-button {
