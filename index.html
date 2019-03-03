@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>Интернет-магазин «Техномарт»</title>    
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">    
@@ -16,7 +17,6 @@
                <a class="header-logo logo" href="#">
                     <img src="img/svg/icon-logo.svg" width="110" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                
                 <form action="" method="post">                   
                     <label for="search-form" class="visually-hidden">
                        Поиск:
@@ -25,8 +25,7 @@
                       <div class="search-icon">
                           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
                       </div>                      
-                </form>
-                
+                </form>                
                 <div class="order-navigation">
                     <a href="#" class="bookmarks-link">Закладки: 0</a>
                     <a href="#" class="basket-link">Корзина: 0</a>
@@ -48,7 +47,7 @@
                     <ul class="main-user-navigation">
                       <li><a href="#" class="login-link">Войти</a></li>
                       <li><a href="#" class="register-link">Регистрация</a></li>
-                    </ul>                 
+                    </ul>                
                 </div>
                       
                 <nav class="main-navigation">
@@ -68,36 +67,56 @@
     <main>
          <div class="container">
               <section class="main-benefits">
-                 <h2 class="visually-hidden">Спецпредложения</h2>
-                      <div class="benefits main-benefits-stuff">
+                  <h2 class="visually-hidden">Спецпредложения</h2>
+                   <ul class="main-benefits-wrapper">                    
+                      <li class="benefits main-benefits-stuff">
                          <div class="flag flag-new">новинка</div>
                           <h3>Материалы</h3>
                           <a href="" class="button-benefits">На любой вкус</a>
-                      </div>
-                      <div class="benefits main-benefits-tool">
+                      </li>
+                      <li class="benefits main-benefits-tool">
+                         <div class="flag">новинка</div>
                           <h3>Инструмент</h3>
                           <a href="" class="button-benefits">На все случаи</a>
-                      </div>
-                      <div class="benefits main-benefits-technics">
+                      </li>
+                      <li class="benefits main-benefits-technics">
+                         <div class="flag">новинка</div>
                           <h3>Техника</h3>
                           <a href="" class="button-benefits">Для стройки</a>
-                      </div>                      
-                      <div class="main-benefits-slider">
-                          <h3>Дрели</h3>
-                          <b>Соседям на радость!</b>
-                          <a href="#" class="red-button slider-button">Открыть каталог</a>
-        <!--                                    Slider-->
-                      </div>  
-                      <div>
+                      </li>                      
+                      <li class="main-benefits-slider">
+                           <input class="visually-hidden" type="radio" id="benefit-1" name="toggle-benefit" checked>
+                           <input class="visually-hidden" type="radio" id="benefit-2" name="toggle-benefit">        
+                           <div class="slider-controls-benefits">
+                               <label class="slider-controls-benefit--1" for="benefit-1">Первый</label>
+                               <label class="slider-controls-benefit--2" for="benefit-2">Второй</label>
+                           </div>
+                            <ul class="slider-list-benefits">
+                                <li class="slider-benefit">
+                                  <h3>Дрели</h3>
+                                  <b>Соседям на радость!</b>
+                                  <a href="#" class="red-button slider-button">Открыть каталог</a>
+                                </li>
+                                <li class="slider-benefit">
+                                  <h3>Перфораторы</h3>
+                                  <b>Настоящие мужские игрушки</b>
+                                  <a href="#" class="red-button slider-button">Открыть каталог</a>
+                                </li>
+                            </ul>       
+                      </li>  
+                      <li>
                           <div class="benefits main-benefits-discount">
+                             <div class="flag">новинка</div>
                               <h3>Скидки 50%</h3>
                               <a href="" class="button-benefits">На 350 товаров</a>
                           </div>
                           <div class="benefits main-benefits-delivery">
+                             <div class="flag">новинка</div>
                               <h3>Доставка</h3>
                               <a href="" class="button-benefits">Бесплатно</a>
                           </div>
-                      </div>                  
+                      </li> 
+                    </ul>                   
               </section>
               
               <section class="popular-item">
@@ -108,6 +127,7 @@
                   
                   <ul class="main-catalog catalog-list">
                       <li class="catalog-item">
+                         <div class="flag">новинка</div>
                           <div class="actions">
                                <a href="#" class="buy-button">Купить</a>
                                <a href="#" class="marker-button">В закладки</a>
@@ -121,7 +141,8 @@
                           <p class="item-old-price">32500 Р.</p> 
                           <p class="item-new-price">25500 Р.</p>
                       </li>
-                      <li class="catalog-item">     
+                      <li class="catalog-item">
+                        <div class="flag">новинка</div>     
                          <div class="actions">
                                <a href="#" class="buy-button">Купить</a>
                                <a href="#" class="marker-button">В закладки</a>
@@ -135,7 +156,8 @@
                           <p class="item-old-price">22500 Р.</p> 
                           <p class="item-new-price">15500 Р.</p>
                       </li>
-                      <li class="catalog-item">    
+                      <li class="catalog-item">
+                        <div class="flag">новинка</div>    
                          <div class="actions">
                                <a href="#" class="buy-button">Купить</a>
                                <a href="#" class="marker-button">В закладки</a>
@@ -180,7 +202,7 @@
                       <li><a href=""><img src="img/brand-hitachi.jpg" alt="Hitachi" width="169" height="31"></a></li>
                       <li><a href=""><img src="img/brand-lg.jpg" alt="LG" width="121" height="73"></a></li>
                       <li><a href=""><img src="img/brand-aeg.jpg" alt="AEG" width="151" height="96"></a></li>
-                      <li><a href=""><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></a></li>                      
+                      <li><a href=""><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></a></li>
                   </ul>              
               </section>
           </div> 
@@ -192,16 +214,30 @@
                       <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                   </div>
                   <div class="main-services-wrapper">
-                      <ul class="services-navigation">
-                          <li><a href="#">Доставка</a></li>
-                          <li><a href="#">Гарантия</a></li>
-                          <li><a href="#">Кредит</a></li>
+                     <input class="visually-hidden" type="radio" id="service-1" name="toggle-service" checked>
+                     <input class="visually-hidden" type="radio" id="service-2" name="toggle-service">
+                     <input class="visually-hidden" type="radio" id="service-3" name="toggle-service">
+                      <ul class="services-navigation slider-controls-services">
+                          <li><label class="slider-controls-service--1" for="service-1">Доставка</label></li>
+                          <li><label class="slider-controls-service--2" for="service-2">Гарантия</label></li>
+                          <li><label class="slider-controls-service--3" for="service-3">Кредит</label></li>
                       </ul>
-                      <div class="main-services-right">
-                          <h3>Доставка</h3>
-                          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-                          <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                      </div>   
+                      <ul class="main-services-right slider-list-services">
+                            <li class="slider-service slider-service--1">
+                                  <h3>Доставка</h3>
+                                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+                                  Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+                            </li>
+                            <li class="slider-service slider-service--2">
+                                  <h3>Гарантия</h3>
+                                  <p>Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
+                            </li>
+                            <li class="slider-service slider-service--3">
+                                  <h3>Кредит</h3>
+                                  <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                                  <a class="slider-item-button red-button" href="#">Отправить заявку</a>
+                            </li>                             
+                      </ul>   
                   </div>    
               </div>
           </section>
@@ -243,7 +279,7 @@
                     <ul class="footer-top-menu">
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Новости</a></li>
-                        <li><a href="#">Каталог</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
