@@ -454,7 +454,7 @@ input[type="radio"].visually-hidden {
 
 /*  ----  catalog  ----  */
 
-.user-name {
+.page-user-control {
     display: block;
     position: relative;
     width: 299px;
@@ -462,10 +462,13 @@ input[type="radio"].visually-hidden {
     padding: 12px 40px 12px 47px;
     
     font-size: 21px;
-    line-height: 21px;
-    color: #000000;
+    line-height: 21px;    
     
     background-color: #ffffff;
+}
+
+.user-name {
+    color: #000000;
 }
 
 .user-name::before {
@@ -493,9 +496,11 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-.user-name::after {
-    content: "";
-    
+.user-name:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-exit {    
     position: absolute;
     top: 14px;
     right: 10px;
@@ -503,6 +508,7 @@ input[type="radio"].visually-hidden {
     width: 20px;
     height: 17px;  
     
+    background-color: transparent;
     background-image: url("../img/svg/icon-logout.svg");
     background-repeat: no-repeat;
     background-position: 0 0;    
@@ -510,16 +516,12 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-.user-name:hover::after {
+.user-exit:hover {
     opacity: 1;
 }
 
-.user-name:focus::after {
+.user-exit:focus {
     opacity: 0.3;
-}
-
-.user-name:focus {
-    color: rgba(0, 0, 0, 0.3);
 }
 
 .page-user-navigation {
@@ -945,9 +947,7 @@ input[type="radio"].visually-hidden {
     background-color: #847365;
 }
 
-.main-benefits-slider::before {
-    content: "";  
-    
+.slider-benefit-next {
     position: absolute;
     left: 25px;
     top: 113px;
@@ -957,14 +957,17 @@ input[type="radio"].visually-hidden {
     
     font-size: 0;
     
+    background-color: transparent;
     background-image: url("../img/svg/icon-left.svg");
     background-repeat: no-repeat;
-    background-position: 0 0 ;
+    background-position: 0 0;
+    
+    border: 0;
+    
+    cursor: pointer;
 }
 
-.main-benefits-slider::after {
-    content: "";  
-    
+.slider-benefit-prev {
     position: absolute;
     right: 20px;
     top: 113px;
@@ -974,9 +977,14 @@ input[type="radio"].visually-hidden {
     
     font-size: 0;
     
+    background-color: transparent;
     background-image: url("../img/svg/icon-right.svg");
     background-repeat: no-repeat;
-    background-position: 0 0 ;
+    background-position: 0 0;
+    
+    border: 0;
+    
+    cursor: pointer;
 }
 
 .slider-controls-benefits {
@@ -1209,6 +1217,7 @@ input[type="radio"].visually-hidden {
     background-color: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
+    
     cursor: pointer;
 }
 
@@ -1654,6 +1663,10 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover {
     border: none;
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item:focus-within .actions {
+    display: block;
 }
 
 .buy-button {
