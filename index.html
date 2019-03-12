@@ -17,7 +17,7 @@
                <a class="header-logo logo" href="#">
                     <img src="img/svg/icon-logo.svg" width="110" height="18" alt="Логотип интернет-магазина «Техномарт»">
                 </a>
-                <form action="" method="post">                   
+                <form action="#" method="post">                   
                     <label for="search-form" class="visually-hidden">
                        Поиск:
                     </label>  
@@ -37,8 +37,7 @@
           <div class="header-primary">
             <div class="container">
                 <div class="header-primary-wrapper">
-                    <h1>Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>
-              
+                    <h1>Интернет-магазин строительных материалов <br> и инструментов для ремонта</h1>              
                     <div class="header-contacts">
                         <p class="header-telephone">+7 (812) 555-05-55</p>
                         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -97,12 +96,12 @@
                                 <li class="slider-benefit">
                                   <h3>Дрели</h3>
                                   <b>Соседям на радость!</b>
-                                  <a href="#" class="red-button slider-button">Открыть каталог</a>
+                                  <a href="catalog.html" class="red-button slider-button">Открыть каталог</a>
                                 </li>
                                 <li class="slider-benefit">
                                   <h3>Перфораторы</h3>
                                   <b>Настоящие мужские игрушки</b>
-                                  <a href="#" class="red-button slider-button">Открыть каталог</a>
+                                  <a href="catalog.html" class="red-button slider-button">Открыть каталог</a>
                                 </li>
                             </ul>                                 
                       </li>  
@@ -197,14 +196,14 @@
                       <a href="#" class="red-button">Все производители</a>
                   </div>                       
                   <ul class="brand-list">
-                      <li><a href=""><img src="img/brand-bosch.jpg" alt="Bosch" width="126" height="37"></a></li>
-                      <li><a href=""><img src="img/brand-makita.jpg" alt="Makita" width="123" height="40"></a></li>
-                      <li><a href=""><img src="img/brand-dewalt.jpg" alt="Dewalt" width="146" height="44"></a></li>
-                      <li><a href=""><img src="img/brand-interskol.jpg" alt="Интерскол" width="200" height="88"></a></li>
-                      <li><a href=""><img src="img/brand-hitachi.jpg" alt="Hitachi" width="169" height="31"></a></li>
-                      <li><a href=""><img src="img/brand-lg.jpg" alt="LG" width="121" height="73"></a></li>
-                      <li><a href=""><img src="img/brand-aeg.jpg" alt="AEG" width="151" height="96"></a></li>
-                      <li><a href=""><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-bosch.jpg" alt="Bosch" width="126" height="37"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-makita.jpg" alt="Makita" width="123" height="40"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-dewalt.jpg" alt="Dewalt" width="146" height="44"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-interskol.jpg" alt="Интерскол" width="200" height="88"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-hitachi.jpg" alt="Hitachi" width="169" height="31"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-lg.jpg" alt="LG" width="121" height="73"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-aeg.jpg" alt="AEG" width="151" height="96"></a></li>
+                      <li class="brand-list__element"><a href=""><img src="img/brand-metabo.jpg" alt="Metabo" width="204" height="69"></a></li>
                   </ul>              
               </section>
           </div> 
@@ -260,7 +259,7 @@
                        <h2>Контакты</h2>
                         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                         <figure class="map-address">
-                          <a href="#">
+                          <a href="map.html" class="button-map">
                               <img src="img/map.jpg" width="300" height="158" alt="Офис на карте">
                           </a>
                         </figure>
@@ -348,7 +347,7 @@
     
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form method="post" action="" class="contact-form">
+      <form method="post" action="#" class="contact-form">
          <div class="modal-contact-top">
               <p class="modal-user-login">
                   <label for="user-login">Ваше имя:</label>
@@ -374,11 +373,154 @@
     
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-          <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen></iframe>
+      <p><img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
       <button class="modal-close" type="button">Закрыть</button>
+
     </section>
+    
+    <div class="modal-buy">
+         <div class="modal-buy-top">
+              <p>Товар добавлен в корзину!</p>
+          </div> 
+          <div class="modal-buy-down">
+              <a href="#" class="red-button">Оформить заказ</a>
+              <a href="#" class="white-button">Продолжить покупки</a>              
+          </div>
+          <button class="modal-close" type="button">Закрыть</button>            
+    </div>
+    
+       <script>
+        var link = document.querySelector(".contact-button");
+        
+        var popup = document.querySelector(".modal-contact");
+        var close = popup.querySelector(".modal-close");
+        
+        var form = popup.querySelector("form");
+        var login = popup.querySelector("[name=login]");
+        var mail = popup.querySelector("[name=mail]");
+        var message = popup.querySelector("[name=message]");
+        
+        var isStorageSupport = true;
+        var loginStorage = "";
+        
+        try {
+            loginStorage = localStorage.getItem("login");
+        } catch (err) {
+            isStorageSupport = false;
+        }        
+        
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+            
+            if (loginStorage) {
+                login.value = loginStorage;
+                mail.focus();
+            } else {
+                login.focus();
+            }
+        });
+        
+        var isStorageSupport = true;
+        var mailStorage = "";
+        
+        try {
+            mailStorage = localStorage.getItem("mail");
+        } catch (err) {
+            isStorageSupport = false;
+        }        
+        
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+            
+            if (mailStorage) {
+                mail.value = mailStorage;
+                message.focus();
+            } else {
+                login.focus();
+            }
+        });
+        
+        close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
+        });
+        
+        form.addEventListener("submit", function (evt) {
+            if (!login.value || !mail.value || !message.value) {
+            evt.preventDefault();
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            popup.classList.add("modal-error");
+            } else {
+                if (isStorageSupport) {
+                    localStorage.setItem("login", login.value);
+                    localStorage.setItem("mail", mail.value);
+                }
+            }
+        });
+        
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+            if (popup.classList.contains("modal-show")) {
+                popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
+                }
+            }
+        });
+        
+        var mapLink = document.querySelector(".button-map");
+        
+        var mapPopup = document.querySelector(".modal-map");
+        var mapClose = mapPopup.querySelector(".modal-close");
+        
+        mapLink.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            mapPopup.classList.add("modal-show");
+        });
+        
+        mapClose.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            mapPopup.classList.remove("modal-show");
+        });
+        
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (mapPopup.classList.contains("modal-show")) {
+                    mapPopup.classList.remove("modal-show");
+                }
+            }
+        });
+        
+        var orderLink = document.querySelector(".buy-button");
+        
+        var orderPopup = document.querySelector(".modal-buy");
+        var orderClose = orderPopup.querySelector(".modal-close");
+        
+        orderLink.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            orderPopup.classList.add("modal-show");
+        });
+        
+        orderClose.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            orderPopup.classList.remove("modal-show");
+        });
+        
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (orderPopup.classList.contains("modal-show")) {
+                    orderPopup.classList.remove("modal-show");
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

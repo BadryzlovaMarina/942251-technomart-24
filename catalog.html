@@ -17,9 +17,8 @@
             <div class="container">  
                <a class="header-logo logo" href="index.html">
                     <img src="img/svg/icon-logo.svg" width="111" height="18" alt="Логотип интернет-магазина «Техномарт»">
-                </a>
-                
-                <form action="" method="post">
+                </a>                
+                <form action="#" method="post">
                     <label class="visually-hidden">
                        Поиск:                        
                     </label>
@@ -30,7 +29,7 @@
                 </form>
                 <div class="order-navigation">
                     <a href="#" class="bookmarks-link">Закладки: 0</a>
-                    <a href="#" class="page-basket">Корзина: 10</a>
+                    <a href="#" class="page-basket order-active">Корзина: 10</a>
                     <a href="#" class="order-link">Оформить заказ</a>
                 </div>
             </div>
@@ -87,7 +86,7 @@
                    <div class="filters-top">
                         <h2>Фильтр:</h2>
                     </div>
-                    <form action="" method="get" class="filter">
+                    <form action="#" method="get" class="filter">
                        <fieldset class="filter-price">
                            <legend>Цена:</legend>
                            <div class="range-filter">
@@ -473,6 +472,32 @@
           </div>
           <button class="modal-close" type="button">Закрыть</button>            
     </div>
+    
+    <script>
+        var orderLink = document.querySelector(".buy-button");
+        
+        var orderPopup = document.querySelector(".modal-buy");
+        var orderClose = orderPopup.querySelector(".modal-close");
+        
+        orderLink.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            orderPopup.classList.add("modal-show");
+        });
+        
+        orderClose.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            orderPopup.classList.remove("modal-show");
+        });
+        
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (orderPopup.classList.contains("modal-show")) {
+                    orderPopup.classList.remove("modal-show");
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
