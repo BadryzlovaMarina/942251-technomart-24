@@ -1,3 +1,4 @@
+if (window.location.toString().indexOf('index.html')>0) {
 var link = document.querySelector(".contact-button");       
 var popup = document.querySelector(".modal-contact");
 var close = popup.querySelector(".modal-close");
@@ -106,3 +107,32 @@ orderClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     orderPopup.classList.remove("modal-show");
 });
+
+} else {
+
+var orderPopup = document.querySelector(".modal-buy");
+var orderClose = orderPopup.querySelector(".modal-close");
+
+var orderLinks = document.querySelectorAll(".buy-button");
+for(var i = 0; i < orderLinks.length; i++) {
+    orderLinks[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    orderPopup.classList.add("modal-show");
+});
+}
+
+orderClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    orderPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+    if (orderPopup.classList.contains("modal-show")) {
+        orderPopup.classList.remove("modal-show");
+    }
+    }
+}); 
+
+}   

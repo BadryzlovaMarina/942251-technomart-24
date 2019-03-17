@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     
-    font-family: "PT Sans", Aril, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -65,6 +65,14 @@ input[type="radio"].visually-hidden {
     
     background-color: #ee3643;    
     border-radius: 3px;
+}
+
+.red-button:hover {
+    background-color: #ca2c37;
+}
+
+.red-button:focus {
+    background-color: #ba2732;
 }
 
 .container {
@@ -350,6 +358,10 @@ input[type="radio"].visually-hidden {
     font-style: italic;    
     color: #ee3643;
     text-align: left;        
+}
+
+.header-primary span {
+    display: block;
 }
 
 .header-contacts {    
@@ -1004,7 +1016,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls-benefits {
     position: absolute;
-    left: 50%;
+    left: 51%;
     top: 220px;
     z-index: 100;
     
@@ -1013,8 +1025,8 @@ input[type="radio"].visually-hidden {
     
     text-align: center;
     font-size: 0;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-51%);
+            transform: translateX(-51%);
 }
 
 .slider-controls-benefits label {
@@ -1123,14 +1135,6 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
-.slider-button:hover {
-    background-color: #ca2c37;
-}
-
-.slider-button:focus {
-    background-color: #ba2732;
-}
-
 .main-page-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1179,7 +1183,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters .filter-power {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
 }
 
 .filter fieldset:last-of-type {
@@ -1420,7 +1424,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     padding: 9px 17px 11px 19px;    
     
     font-size: 13px;
@@ -1653,8 +1657,7 @@ input[type="radio"].visually-hidden {
     width: 220px;
     margin-bottom: 20px;
     margin-right: 20px;
-    padding: 1px;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
     
     border: 1px solid #e5e5e5;
 }
@@ -1884,8 +1887,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-services {      
-    padding-top: 63px;
-    padding-bottom: 99px;
+    padding-top: 65px;
+    padding-bottom: 97px;
     
     background-color: #f4f7f9;    
 }
@@ -1900,7 +1903,7 @@ input[type="radio"].visually-hidden {
     content: "";
     
     position: absolute;
-    bottom: -99px;
+    bottom: -97px;
     right: 0;
     
     width: 468px;
@@ -1915,7 +1918,7 @@ input[type="radio"].visually-hidden {
     content: "";
     
     position: absolute;
-    bottom: -99px;
+    bottom: -97px;
     right: -10px;
     
     width: 389px;
@@ -1930,7 +1933,7 @@ input[type="radio"].visually-hidden {
     content: "";
     
     position: absolute;
-    bottom: -99px;
+    bottom: -97px;
     right: -10px;
     
     width: 465px;
@@ -2012,7 +2015,7 @@ input[type="radio"].visually-hidden {
     
     position: absolute;
     top: -40px;
-    right: -1px;
+    right: 0;
     
     width: 10px;
     height: 279px;
@@ -2088,7 +2091,7 @@ input[type="radio"].visually-hidden {
 .slider-item-button {
     display: block;
     width: 195px;
-    margin-top: 29px;
+    margin-top: 26px;
     padding: 10px 40px;
     
     text-align: center;   
@@ -2102,7 +2105,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 80px;
-    padding-bottom: 85px;
+    padding-bottom: 87px;
 }
 
 .main-down-wrapper p {
@@ -2139,7 +2142,9 @@ input[type="radio"].visually-hidden {
 
 .delivery-option {
     margin: 0;
+    padding: 0;
     margin-top: 22px;
+    padding-left: 37px;
     
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
@@ -2151,7 +2156,7 @@ input[type="radio"].visually-hidden {
 
 .delivery-option li {
     position: relative;
-    margin-bottom: 21px;    
+    margin-bottom: 20px;    
 }
 
 .delivery-option li:before {
@@ -2159,12 +2164,16 @@ input[type="radio"].visually-hidden {
     
     position: absolute;
     top: 8px;
-    left: -40px;
+    left: -37px;
     
     width: 25px;
     height: 2px;
     
     background-color: #ee3643;
+}
+
+.extra-benefits .red-button {
+    padding: 11px 10px 9px 10px;
 }
 
 .main-contacts {
@@ -2201,8 +2210,7 @@ input[type="radio"].visually-hidden {
 .contact-button {
     display: block;
     width: 300px;
-    padding: 10px;
-    padding-left: 58px;
+    padding: 11px 10px 9px 64px;
     
     text-align: left;
     
@@ -2235,8 +2243,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-item a {
     display: block;
-    width: 38px;
-    padding: 9px;        
+    padding: 9px 14.5px;        
     
     font-size: 13px;
     line-height: 18px;
@@ -2249,7 +2256,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item:last-child a {
-    width: 140px;
+    padding: 9px 30.5px;
 }
 
 .pagination-item a:hover {
@@ -2261,6 +2268,8 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item-current a {
+    padding: 10px 15.5px;
+
     color: #ffffff;
     background-color: #ee3643;
     border: none;
@@ -2291,7 +2300,6 @@ input[type="radio"].visually-hidden {
 
 .description-item p {
     margin: 0;
-    width: 938px;
     
     font-size: 13px;
     line-height: 24px;
@@ -2315,19 +2323,18 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-bottom: 28px;
 }
 
 .footer-logo {
     width: 220px;
     height: 68px;
-}
 
-.footer-logo {
     padding: 20px 41px 20px 41px;
+
+    -webkit-box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
+            box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .footer-top-menu,
@@ -2342,10 +2349,9 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 550px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 552px;
     margin-left: auto;
     margin-top: 38px;
 }
@@ -2375,9 +2381,6 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
 }
 
 .footer-contacts p {
@@ -2393,15 +2396,18 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 525px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 527px;
     margin-left: auto;
 }
 
 .footer-down-menu li {
     padding-right: 60px;
+}
+
+.footer-down-menu li:last-child {
+    padding-right: 0px;
 }
 
 .footer-down-menu a {
@@ -2419,7 +2425,7 @@ input[type="radio"].visually-hidden {
 
 .footer-primary {
     padding-top: 35px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     
     font-size: 16px;
     line-height: 18px;
@@ -2431,18 +2437,56 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
 }
 
 .footer-primary ul {
     list-style: none;
 }
 
-.copyright {
-    margin: 0;
+.copyright {    
     width: 230px;
+    margin: 0;
+    margin-right: 160px;
+}
+
+.footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 135px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.social-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 90px;
+
+    color: #ffffff;
+    
+    background-color: #212a3a;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ee3643;
 }
 
 .footer-primary-right {
@@ -2465,10 +2509,6 @@ input[type="radio"].visually-hidden {
     width: 110px;
 }
 
-.social-button {
-    color: #ffffff;
-}
-
 .footer-primary-right a{
     color: #ffd180;
 }
@@ -2480,45 +2520,6 @@ input[type="radio"].visually-hidden {
 .footer-primary-right a:focus {
     color: #ee3643;
     border: none;
-}
-
-.social-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 90px;
-    
-    background-color: #212a3a;
-}
-
-.social-button:hover,
-.social-button:focus {
-    background-color: #ee3643;
-}
-
-.footer-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 135px;
-    margin: 0 auto;
-    margin-left: 160px;
-    padding: 0;
-
-    list-style: none;
 }
 
 .modal-contact {
@@ -2580,7 +2581,7 @@ input[type="radio"].visually-hidden {
 .contact-form textarea {
     margin-top: 9px;
     
-    font-family: "PT Sans", Aril, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     
@@ -2601,6 +2602,18 @@ input[type="radio"].visually-hidden {
 
 .contact-form input::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+    color: #999999;
+}
+.contact-form input::-ms-input-placeholder,
+.contact-form textarea::-ms-input-placeholder {
+    color: #999999;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
     color: #999999;
 }
 
